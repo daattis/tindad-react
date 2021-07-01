@@ -13,11 +13,14 @@ function App() {
       <Router>
       
       <Switch>
+        <Route path="/profile">
+          <h1> I'm the profilepage</h1>
+        </Route>
         <Route path="/chat">
           <h1> I'm the chatpage</h1>
         </Route>
         <Route path="/">
-          <h1> I'm the homepage</h1>
+          <Cards />
         </Route>
       </Switch>
 
