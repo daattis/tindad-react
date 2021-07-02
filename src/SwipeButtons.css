@@ -1,9 +1,26 @@
-.swipebuttons {
-    display:flex;    
-    border-bottom: 1px solid #f9f9f9;
-    align-items: center;
+.swipeButtons {
+    position: fixed;
+    bottom: 10vh;
+    display: flex;    
     justify-content: space-evenly;
+    width: 100%;
+    
 }
-.swipebuttons-heart {
-    color: chartreuse;
+.swipebuttons-right {
+    background-color: white;
+    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3) !important;
+    color:yellowgreen !important;
+    padding: 3vW !important;
+}
+.swipebuttons-left {
+    background-color: white;
+    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3) !important;
+    color: #ff4c68 !important;
+    padding: 3vW !important;
+}
+.swipebuttons-info {
+    background-color: white;
+    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3) !important;
+    color: rgb(113, 176, 195) !important;
+    padding: 3vW !important;
 }

@@ -3,17 +3,22 @@ import './SwipeButtons.css';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ClearIcon from '@material-ui/icons/Clear';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import { IconButton } from '@material-ui/core';
 
 
 const SwipeButtons = () => {
     return (
     <div
-    className="swipebuttons">
-
-    <ClearIcon color="secondary" fontSize="large"/>
-    <InfoOutlinedIcon color="primary" fontSize="medium"/>
-    <FavoriteIcon className="swipebuttons-heart" fontSize="large" />
-    
+    className="swipeButtons">
+        <IconButton className="swipebuttons-left">
+            <ClearIcon  fontSize="large"/>
+        </IconButton>    
+        <IconButton className="swipebuttons-info">
+            <InfoOutlinedIcon  fontSize="large"/>
+        </IconButton>
+        <IconButton className="swipebuttons-right">
+            <FavoriteIcon  fontSize="large" />
+        </IconButton>
     </div>
     )
 }

@@ -7,14 +7,18 @@ function Cards () {
 
     const [people, setPeople] = useState([]);
 
-useEffect(() => {
-
-    database.collection('people').onSnapshot(snapshot => (
-        setPeople(snapshot.docs.map(doc => doc.data()))
-    ))
-
-    // this will run once when the component loads, and never again after that
-}, []);
+    useEffect(() => {
+        
+        const unsubscribe = database
+          .collection("people")
+          .onSnapshot((snapshot) =>
+            setPeople(snapshot.docs.map((doc) => doc.data()))
+          );
+    
+        return () => {
+          unsubscribe();
+        };
+      }, []);
 
 return (<div>
 
