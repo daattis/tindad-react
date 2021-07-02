@@ -1,0 +1,9 @@
+.swipebuttons {
+    display:flex;    
+    border-bottom: 1px solid #f9f9f9;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.swipebuttons-heart {
+    color: chartreuse;
+}

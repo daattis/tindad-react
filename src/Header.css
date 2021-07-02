@@ -3,48 +3,24 @@
     justify-content: space-between;
     border-bottom: 1px solid #f9f9f9;
     align-items: center;
-
     
 }
 .logo {
     color: #ff4c68;
     padding: 20px;
-    font-size: 3rem;
     font-weight: bold;
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
 }
 .header-icon {
     padding: 20px
 }
 
-
 /*
-tindad logo 
-.navbar-brand {
-    font-family: "Ubuntu";
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+tindad color pallette: 
+color: #fff;
+color: #ff4c68;
+color: #8f8f8f;
+color: #ef8172;
 
-and other usefull styles from the webpage project
-  font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 1.5;
-    color: #fff;
-
-
-
-background-color: #ff4c68;
-    color:#FFF;
-
-p {
-    color: #8f8f8f;
-}
-
-
-.feature-images {
-    color:#ef8172;
-    margin-bottom: 1rem; 
-}
 */

@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import Cards from './Cards';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SwipeButtons from './SwipeButtons';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </Route>
         <Route path="/">
           <Cards />
+          <SwipeButtons />
         </Route>
       </Switch>
 
