@@ -1,0 +1,20 @@
+.chat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 70px;
+    border-bottom: 1px solid rgb(243, 243, 243);
+}
+
+.chat-details {
+    /*give this container the entire space that's left*/
+    flex: 1;
+}
+.chat-details > p {
+    color: grey;
+}
+
+.chat-timestamp {
+    color: rgb(192, 192, 192);
+}
