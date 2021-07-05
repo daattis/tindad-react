@@ -5,6 +5,8 @@ import Cards from './Cards';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SwipeButtons from './SwipeButtons';
 import Chats from './Chats';
+import Chatscreen from './Chatscreen';
+
 
 function App() {
   return (
@@ -13,15 +15,19 @@ function App() {
       <Router>
         <Switch>
 
+        <Route path="/chat/:person">
+            <Header backButton="/chat" />
+            <Chatscreen />
+          </Route>
+
           <Route path="/chat">
             <Header backButton="/" />
             <Chats />
           </Route>
 
-     
           <Route path="/profile">
             <Header backButton="/"/>
-            <h1> I'm the profilepage</h1>
+            
           </Route>
         
           <Route path="/">
@@ -29,6 +35,7 @@ function App() {
             <Cards />
             <SwipeButtons />
           </Route>
+
       </Switch>
 
       {/*Buttons below tinder cards*/}
