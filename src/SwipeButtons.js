@@ -7,16 +7,24 @@ import { IconButton } from '@material-ui/core';
 
 
 const SwipeButtons = () => {
+
+    const swipe = (something) => {
+        console.log("Swiped " + something + "!");
+        
+        // find the card object which should be removed
+        // swipe the card
+    }
+
     return (
     <div
     className="swipeButtons">
-        <IconButton className="swipebuttons-left">
+        <IconButton className="swipebuttons-left" onClick={()=> {swipe('left')}}>
             <ClearIcon  fontSize="large"/>
         </IconButton>    
         <IconButton className="swipebuttons-info">
             <InfoOutlinedIcon  fontSize="large"/>
         </IconButton>
-        <IconButton className="swipebuttons-right">
+        <IconButton className="swipebuttons-right" onClick={()=> {swipe('right')}}>
             <FavoriteIcon  fontSize="large" />
         </IconButton>
     </div>

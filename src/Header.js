@@ -19,7 +19,7 @@ function Header ({backButton}) {
                 <ArrowBackIcon fontSize="large" className="header-icon"/>
             </IconButton>
         ) : (
-            <Link to="/profile">
+        <Link to="/profile">
             <IconButton>
                 <AccountCircleIcon className="header-icon" fontSize="large"/>
             </IconButton>
@@ -29,6 +29,7 @@ function Header ({backButton}) {
         <Link to="/" className="logo">
             <h2 className="logo">tindad</h2>
         </Link>
+        
         <Link to="/chat">
             <IconButton>
                 <QuestionAnswerIcon className="header-icon" fontSize="large"/>
