@@ -6,25 +6,18 @@ import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import { IconButton } from '@material-ui/core';
 
 
-const SwipeButtons = () => {
-
-    const swipe = (something) => {
-        console.log("Swiped " + something + "!");
-        
-        // find the card object which should be removed
-        // swipe the card
-    }
+const SwipeButtons = ({onSwipe}) => {
 
     return (
     <div
     className="swipeButtons">
-        <IconButton className="swipebuttons-left" onClick={()=> {swipe('left')}}>
+        <IconButton className="swipebuttons-left" onClick={() => onSwipe('left')}>
             <ClearIcon  fontSize="large"/>
         </IconButton>    
         <IconButton className="swipebuttons-info">
             <InfoOutlinedIcon  fontSize="large"/>
         </IconButton>
-        <IconButton className="swipebuttons-right" onClick={()=> {swipe('right')}}>
+        <IconButton className="swipebuttons-right" onClick={() => onSwipe('right')}>
             <FavoriteIcon  fontSize="large" />
         </IconButton>
     </div>
