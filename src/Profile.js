@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Fragment } from 'react';
 import Switch from 'react-input-switch';
@@ -27,8 +28,8 @@ function Profile () {
         <Switch on="yes" off="no" value={value} onChange={setValue}/>
     </Fragment>
 </div>
-        <p>Region</p>
         <p>Search range</p>
+     
         </div>
     </div>
 

@@ -9,16 +9,16 @@ function Cards () {
 
     useEffect(() => {
         
-        const unsubscribe = database
-          .collection("people")
-          .onSnapshot((snapshot) =>
-            setPeople(snapshot.docs.map((doc) => doc.data()))
-          );
-    
-        return () => {
-          unsubscribe();
-        };
-      }, []);
+      const unsubscribe = database
+        .collection("people")
+        .onSnapshot((snapshot) =>
+          setPeople(snapshot.docs.map((doc) => doc.data()))
+        );
+  
+      return () => {
+        unsubscribe();
+      };
+    }, []);
 
 return (<div>
 
